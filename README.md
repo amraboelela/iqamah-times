@@ -8,7 +8,8 @@ To install on Raspberry Pi 4 (or 5):
 ```
 sudo nano /etc/rc.local
 ```
-Then add:
+
+Then add, this line before `exit 0`:
 ```
 chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=7
 ```
