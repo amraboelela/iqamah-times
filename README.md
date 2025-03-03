@@ -24,7 +24,7 @@ If Wayland is running, it should output:
 labwc:wlroots
 ```
 
-#### If using LXDE
+### If using LXDE
 Then run:
 ```
 sudo nano /etc/rc.local
