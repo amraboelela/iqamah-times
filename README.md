@@ -92,14 +92,57 @@ If the autostart method doesn’t work, try a **systemd service**:
 
 ---
 
-### **3. Check for Errors**
-If Chromium still doesn't start:
-- Run `journalctl -xe` or `systemctl status chromium-autostart` to check errors.
-- Make sure you installed **Chromium** using:
-  ```bash
-  sudo apt update
-  sudo apt install -y chromium-browser
-  ```
-- Ensure your **desktop environment (LXDE or others) is fully installed**.
 
-Try these and let me know what happens! 🚀
+To check if **LXDE (Lightweight X11 Desktop Environment)** is installed on your Raspberry Pi, try the following methods:
+
+---
+
+### **1. Check Installed Packages**
+Run this command in the terminal:
+```bash
+dpkg -l | grep lxde
+```
+If LXDE is installed, you should see package names like:
+```
+ii  lxde ...
+ii  lxde-common ...
+ii  lxde-core ...
+```
+If nothing appears, LXDE is **not installed**.
+
+---
+
+### **2. Check if LXDE is Running**
+If you are in the GUI, run:
+```bash
+echo $XDG_CURRENT_DESKTOP
+```
+If LXDE is running, it should output:
+```
+LXDE
+```
+If it’s empty or shows something else, then LXDE may not be running.
+
+---
+
+### **3. Try Manually Starting LXDE**
+Run:
+```bash
+startx
+```
+If LXDE is installed but not set to start automatically, this command should launch it.
+
+---
+
+### **4. Install LXDE (If Missing)**
+If you don’t have LXDE, install it with:
+```bash
+sudo apt update
+sudo apt install -y lxde lxde-common lxde-core
+```
+Then reboot:
+```bash
+sudo reboot
+```
+
+Let me know if you need more help! 🚀
