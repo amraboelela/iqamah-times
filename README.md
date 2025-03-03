@@ -125,24 +125,52 @@ If it’s empty or shows something else, then LXDE may not be running.
 
 ---
 
-### **3. Try Manually Starting LXDE**
-Run:
-```bash
-startx
-```
-If LXDE is installed but not set to start automatically, this command should launch it.
+If `echo $XDG_CURRENT_DESKTOP` returns **`labwc:wlroots`**, that means your Raspberry Pi 5 is running **Labwc**, a Wayland-based lightweight window manager, instead of LXDE.  
+
+Since **Labwc is Wayland-based**, Chromium might not launch automatically in the same way as it does in an **X11-based** environment like LXDE.
 
 ---
 
-### **4. Install LXDE (If Missing)**
-If you don’t have LXDE, install it with:
+### **How to Start Chromium on Wayland (Labwc)**
+Try launching Chromium with Wayland support:
+```bash
+chromium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland
+```
+If Chromium works this way, you can add it to autostart.
+
+---
+
+### **How to Autostart Chromium on Labwc**
+1. Open or create the **Labwc startup file**:
+   ```bash
+   nano ~/.config/labwc/autostart
+   ```
+2. Add the following line:
+   ```
+   chromium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland --start-fullscreen --noerrdialogs --disable-infobars --incognito https://www.google.com &
+   ```
+3. Save and exit (`CTRL + X`, then `Y`, then `Enter`).
+
+4. Restart Labwc or reboot:
+   ```bash
+   sudo reboot
+   ```
+
+---
+
+### **Do You Want to Use LXDE Instead?**
+If you prefer the traditional **LXDE desktop**, you can install it with:
 ```bash
 sudo apt update
 sudo apt install -y lxde lxde-common lxde-core
 ```
-Then reboot:
+Then set it as the default session:
 ```bash
-sudo reboot
+sudo raspi-config
 ```
+- Go to **System Options** → **Boot/Auto Login** → **Desktop GUI**.
+- Select **LXDE**.
+- Reboot.
 
-Let me know if you need more help! 🚀
+Let me know which approach you prefer! 🚀
+
