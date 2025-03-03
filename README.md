@@ -9,6 +9,11 @@ To install on Raspberry Pi 4 (or 5):
 
 ***Note:*** You will need to replace `merced` with your own city, if your city doesn't exist, please contact albara@ramli.net to add your city. This is the link we will use in the below instructions, so make sure you replace `merced` with your own city in the below instructions as well.
 
+At the end if each of the following methods you will need to restart the machine by doing:
+```
+$ sudo reboot
+```
+
 ### Check if using LXDE or Wayland
 If you are in the GUI, run:
 ```bash
@@ -30,7 +35,7 @@ Then run:
 sudo nano /etc/rc.local
 ```
 
-Then add, this line before `exit 0`:
+Then add this line after replacing `merced` with your own city, before `exit 0` line:
 ```
 chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=7
 ```
@@ -41,14 +46,9 @@ chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?c
 sudo mousepad /etc/xdg/lxsession/LXDE-pi/autostart
 ```
 
-Add:
+Then add this line after replacing `merced` with your own city.
 ```
 chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=7
-```
-
-Restart the machine:
-```
-$ sudo reboot
 ```
 
 ### If using Wayland
@@ -57,14 +57,16 @@ $ sudo reboot
    ```bash
    nano ~/.config/labwc/autostart
    ```
-2. Add the following line:
+2. Add this line after replacing `merced` with your own city.
    ```
    chromium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland --start-fullscreen --noerrdialogs --disable-infobars --incognito https://albara.ramli.net/iqamah/screen.php?city=merced&size=7 &
    ```
 3. Save and exit (`CTRL + X`, then `Y`, then `Enter`).
 
-4. Restart Labwc or reboot:
-   ```bash
-   sudo reboot
-   ```
+### Restart the machine
+At the end you need restart the machine:
+```
+$ sudo reboot
+```
+
 
