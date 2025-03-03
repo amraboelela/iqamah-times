@@ -36,7 +36,6 @@ chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?c
 ```
 
 #### Another method
-This didn't work with me though!
 
 ```
 sudo mousepad /etc/xdg/lxsession/LXDE-pi/autostart
