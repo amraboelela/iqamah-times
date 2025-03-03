@@ -1,4 +1,4 @@
-# iqamah-times
+# Iqamah Times
 
 General instructions: https://albara.ramli.net/iqamah/
 
