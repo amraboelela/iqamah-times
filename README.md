@@ -5,7 +5,7 @@ General instructions: https://albara.ramli.net/iqamah/
 ## Install
 To install on Raspberry Pi 4 (or 5):
 
-- Test this link: https://albara.ramli.net/iqamah/screen.php?city=merced&size=1
+- Test this link: https://albara.ramli.net/iqamah/screen.php?city=merced&size=2
 
 **Note:** You will need to replace `merced` with your own city, if your city doesn't exist, please contact albara@ramli.net to add your city. This is the link we will use in the below instructions, so make sure you replace `merced` with your own city in the below instructions as well.
 
@@ -32,7 +32,7 @@ sudo nano /etc/rc.local
 
 Then add this line after replacing `merced` with your own city, before `exit 0` line:
 ```
-chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=1
+chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=2
 ```
 
 #### Another method
@@ -43,7 +43,7 @@ sudo mousepad /etc/xdg/lxsession/LXDE-pi/autostart
 
 Then add this line after replacing `merced` with your own city.
 ```
-chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=1
+chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=2
 ```
 
 ### If using Wayland
@@ -54,7 +54,7 @@ chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?c
    ```
 2. Add this line after replacing `merced` with your own city.
    ```
-   chromium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland --start-fullscreen --noerrdialogs --disable-infobars --incognito https://albara.ramli.net/iqamah/screen.php?city=merced&size=1 &
+   chromium-browser --enable-features=UseOzonePlatform --ozone-platform=wayland --start-fullscreen --noerrdialogs --disable-infobars --incognito https://albara.ramli.net/iqamah/screen.php?city=merced&size=2 &
    ```
 3. Save and exit (`CTRL + X`, then `Y`, then `Enter`).
 
