@@ -58,6 +58,25 @@ chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?c
    ```
 3. Save and exit (`CTRL + X`, then `Y`, then `Enter`).
 
+### Change to display portrait
+
+To rotate the display to **portrait mode** on your Raspberry Pi using the **GUI (Raspberry Pi OS / Roseberry)**, follow these steps:
+
+1. **Open the "Screen Configuration" Tool**  
+   - Click on the **Raspberry Pi menu** (top-left corner).  
+   - Go to **Preferences** → **Screen Configuration**.
+
+2. **Select the Display**  
+   - Click on the **display** you want to rotate.
+
+3. **Change the Orientation**  
+   - In the menu bar, go to **"Orientation"**.
+   - Choose **"Right"** (90°) or **"Left"** (270°) for portrait mode.
+   - Click **"Apply"**.
+
+4. **Confirm the Rotation**  
+   - A prompt will appear asking if you want to keep the changes. Click **"OK"**.
+
 ### Restart the machine
 At the end you need restart the machine:
 ```
