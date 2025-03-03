@@ -24,7 +24,7 @@ If Wayland is running, it should output:
 labwc:wlroots
 ```
 
-### If using LXDE
+- **If using LXDE**
 Then run:
 ```
 sudo nano /etc/rc.local
@@ -46,7 +46,7 @@ Then add this line after replacing `merced` with your own city.
 chromium-browser --start-fullscreen https://albara.ramli.net/iqamah/screen.php?city=merced&size=7
 ```
 
-### If using Wayland
+- **If using Wayland**
 
 1. Open or create the **Labwc startup file**:
    ```bash
