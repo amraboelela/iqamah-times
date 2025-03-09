@@ -77,19 +77,20 @@ To rotate the display to **portrait mode** on your Raspberry Pi using the **GUI 
 4. **Confirm the Rotation**  
    - A prompt will appear asking if you want to keep the changes. Click **"OK"**.
 
+### Change Chromium Zoom
+You will need to change the content zoom of Chromium, as following:
+	1.	Open Chromium.
+	2.	Access the settings menu by clicking the three vertical dots in the top-right corner and selecting “Settings.”
+	3.	Under the “Appearance” section, locate the “Page zoom” dropdown menu.
+	4.	Select “80%” from the dropdown options.
+
 ### Mute the machine
 To prevent any atahn or sound to come out of the Rasberry machine:
 
 **Method 1: Mute from the Taskbar**
 1. Look for the **speaker icon** in the **top-right corner** of the screen.  
 2. **Right-click** the speaker icon and select **Mute Audio**.  
-3. This setting should persist after rebooting (but may not always).  
-
-**Method 2: Disable Audio in Raspberry Pi Settings**
-1. Open the **Raspberry Pi menu** (top-left).  
-2. Go to **Preferences** → **Audio Device Settings**.  
-3. Set the **output device** to "Off" or mute all volume sliders.  
-4. Click **Apply**, then **OK**.  
+3. This setting should persist after rebooting (but may not always).
 
 ### Restart the machine
 At the end you need restart the machine:
