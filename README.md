@@ -78,16 +78,14 @@ To rotate the display to **portrait mode** on your Raspberry Pi using the **GUI 
    - A prompt will appear asking if you want to keep the changes. Click **"OK"**.
 
 ### Change Chromium Zoom
-You will need to change the content zoom of Chromium, as following:
-	1.	Open Chromium.
-	2.	Access the settings menu by clicking the three vertical dots in the top-right corner and selecting “Settings.”
-	3.	Under the “Appearance” section, locate the “Page zoom” dropdown menu.
-	4.	Select “80%” from the dropdown options.
+To make the athan content fits correctly I had to change the zoom level of Chromium to be 80%, as following:
+1. Open Chromium.
+2. Access the settings menu by clicking the three vertical dots in the top-right corner and selecting “Settings.”
+3. Under the “Appearance” section, locate the “Page zoom” dropdown menu.
+4. Select “80%” from the dropdown options.
 
 ### Mute the machine
 To prevent any atahn or sound to come out of the Rasberry machine:
-
-**Method 1: Mute from the Taskbar**
 1. Look for the **speaker icon** in the **top-right corner** of the screen.  
 2. **Right-click** the speaker icon and select **Mute Audio**.  
 3. This setting should persist after rebooting (but may not always).
